@@ -4,40 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sweeta Odoom — HR Coordinator | People Operations</title>
-<meta name="description" content="Sweeta Odoom — HR Coordinator and People Operations professional in New York City.">
+<meta name="description" content="Sweeta Odoom — HR Coordinator and People Operations professional in New York City. 8+ years across HR coordination, employee records, onboarding, and program administration.">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: Georgia, 'Times New Roman', serif; background:#fff5f8; color:#4a1f33; line-height:1.6; }
-  .wrap { max-width:640px; margin:0 auto; padding:0 20px 48px; }
-  header.hero { text-align:center; padding:36px 20px 28px;
-    background:linear-gradient(160deg,#8e2f56 0%,#a34d6e 60%,#c06a8c 100%); color:#fff; }
-  header.hero img { width:120px; height:120px; border-radius:50%; object-fit:cover;
-    border:4px solid #ffd9e8; margin-bottom:14px; }
-  header.hero h1 { font-size:30px; letter-spacing:.5px; }
-  header.hero .role { font-family:Arial,Helvetica,sans-serif; font-size:12px; letter-spacing:2.5px;
-    text-transform:uppercase; color:#ffd9e8; margin-top:6px; }
-  header.hero .loc { font-size:14px; color:#ffe9f1; margin-top:6px; font-style:italic; }
-  .cta { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
-  .cta a { font-family:Arial,Helvetica,sans-serif; font-size:13px; font-weight:bold; text-decoration:none;
-    background:#fff; color:#8e2f56; padding:10px 18px; border-radius:24px; }
-  section.card { background:#fff; border-radius:14px; padding:22px; margin-top:18px;
-    box-shadow:0 2px 10px rgba(142,47,86,.08); }
-  section.card h2 { font-size:19px; color:#8e2f56; margin-bottom:10px;
-    border-bottom:2px solid #ffd9e8; padding-bottom:6px; }
+  :root {
+    --navy:#1F3864; --navy-deep:#142A4E; --cream:#FAF5EC; --card:#FFFFFF;
+    --brass:#B9975B; --ink:#2B2B2B; --muted:#5A6B85;
+  }
+  html { scroll-behavior:smooth; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--cream); color:var(--ink); line-height:1.65; }
+  .wrap { max-width:660px; margin:0 auto; padding:0 20px 56px; }
+
+  header.hero { text-align:center; padding:48px 24px 40px; color:#fff;
+    background:linear-gradient(165deg,var(--navy-deep) 0%,var(--navy) 65%,#2A4A7A 100%); }
+  header.hero img { width:148px; height:148px; border-radius:50%; object-fit:cover;
+    border:4px solid var(--brass); box-shadow:0 8px 28px rgba(0,0,0,.28); margin-bottom:18px; }
+  header.hero h1 { font-family:Georgia,'Times New Roman',serif; font-size:34px; letter-spacing:.5px; }
+  header.hero .role { font-size:12.5px; letter-spacing:3px; text-transform:uppercase;
+    color:#E8D9BE; margin-top:8px; }
+  header.hero .loc { font-family:Georgia,serif; font-style:italic; font-size:15px;
+    color:#D7E2F2; margin-top:8px; }
+  .cta { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:22px; }
+  .cta a { font-size:13px; font-weight:600; text-decoration:none; letter-spacing:.4px;
+    background:var(--brass); color:var(--navy-deep); padding:11px 20px; border-radius:26px;
+    transition:transform .18s ease, box-shadow .18s ease; }
+  .cta a.ghost { background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,.55); }
+  .cta a:hover { transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.22); }
+
+  section.card { background:var(--card); border-radius:16px; padding:26px; margin-top:20px;
+    box-shadow:0 2px 14px rgba(31,56,100,.08); border-top:3px solid var(--brass);
+    opacity:0; transform:translateY(18px); transition:opacity .55s ease, transform .55s ease; }
+  section.card.visible { opacity:1; transform:none; }
+  section.card h2 { font-family:Georgia,serif; font-size:21px; color:var(--navy);
+    margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid #EDE4D3; }
+  p.about { font-size:16px; color:#333; }
+
   .chips { display:flex; flex-wrap:wrap; gap:8px; }
-  .chips span { font-family:Arial,Helvetica,sans-serif; font-size:12px; background:#ffe9f1; color:#8e2f56;
-    padding:6px 12px; border-radius:16px; }
-  .job { margin-bottom:18px; }
-  .job:last-child { margin-bottom:0; }
-  .job h3 { font-size:16px; color:#8e2f56; }
-  .job .meta { font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#a34d6e; margin:2px 0 8px; }
-  .job ul { margin-left:18px; font-size:14.5px; }
-  .job li { margin-bottom:6px; }
-  p.about { font-size:15.5px; }
-  .edu p { font-size:14.5px; margin-bottom:8px; }
-  footer { text-align:center; font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#a34d6e;
-    margin-top:28px; }
-  footer a { color:#8e2f56; }
+  .chips span { font-size:12.5px; font-weight:500; background:#EEF2F9; color:var(--navy);
+    padding:7px 14px; border-radius:18px; border:1px solid #D8E1F0; }
+
+  .job { margin-bottom:22px; padding-bottom:22px; border-bottom:1px solid #F0E8D8; }
+  .job:last-child { margin-bottom:0; padding-bottom:0; border-bottom:none; }
+  .job h3 { font-family:Georgia,serif; font-size:17.5px; color:var(--navy); }
+  .job .title { font-size:14.5px; font-weight:600; color:#8A6D3B; margin-top:2px; }
+  .job .meta { font-size:12.5px; color:var(--muted); margin:3px 0 10px; }
+  .job ul { margin-left:18px; font-size:15px; color:#333; }
+  .job li { margin-bottom:7px; }
+  .job li::marker { color:var(--brass); }
+
+  .edu p { font-size:15px; margin-bottom:10px; color:#333; }
+  .edu strong { color:var(--navy); }
+
+  footer { text-align:center; font-size:13px; color:var(--muted); margin-top:36px; line-height:2; }
+  footer a { color:var(--navy); font-weight:600; }
+  footer .name { font-family:Georgia,serif; font-size:16px; color:var(--navy); }
 </style>
 </head>
 <body>
@@ -49,73 +70,99 @@
   <div class="cta">
     <a href="tel:+19174022869">Call</a>
     <a href="mailto:sweetaodoom@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/sweeta-o-67b328158/">LinkedIn</a>
+    <a class="ghost" href="https://www.linkedin.com/in/sweeta-o-67b328158/">LinkedIn</a>
+    <a class="ghost" href="Sweeta_Odoom_Resume_HR_Coordinator.pdf">R&eacute;sum&eacute;</a>
   </div>
 </header>
 <div class="wrap">
+
   <section class="card">
     <h2>About</h2>
-    <p class="about">People-focused administrative professional with 5+ years supporting HR processes, workforce coordination, onboarding, timekeeping, and employee communication across healthcare, fulfillment, and program-based environments. Proven track record resolving attendance discrepancies, coordinating cross-functional teams, and managing confidential employee records.</p>
+    <p class="about">HR professional with 8+ years of progressive experience across HR coordination, employee records, onboarding support, and program administration in nonprofit, healthcare, and corporate settings. I keep the people operations behind an organization running — accurate records, smooth onboarding, and employees who get answers when they need them.</p>
   </section>
+
   <section class="card">
     <h2>Core Competencies</h2>
     <div class="chips">
-      <span>HR &amp; Onboarding Support</span><span>Timekeeping &amp; Attendance</span>
-      <span>Employee Records &amp; Compliance</span><span>Scheduling &amp; Workforce Coordination</span>
-      <span>Employee Communication</span><span>Procurement &amp; Facilities Support</span>
-      <span>Office Operations</span><span>Documentation Management</span>
+      <span>HR Coordination &amp; Employee Support</span><span>Onboarding &amp; New-Hire Paperwork</span>
+      <span>Employee Records &amp; HRIS Documentation</span><span>Timekeeping &amp; Attendance</span>
+      <span>Employee &amp; Stakeholder Communication</span><span>Scheduling &amp; Workforce Coordination</span>
+      <span>Compliance Documentation</span><span>Office &amp; Program Operations</span>
     </div>
   </section>
+
   <section class="card">
     <h2>Experience</h2>
     <div class="job">
       <h3>Fort George Community Enrichment Center</h3>
-      <div class="meta">EHS Assistant — Program, Family &amp; Administrative Coordination &middot; Jun 2025 – Present &middot; Full-time</div>
+      <div class="title">EHS Assistant — Program &amp; Administrative Coordination</div>
+      <div class="meta">Jun 2025 – Present &middot; New York, NY &middot; Full-time</div>
       <ul>
-        <li>Coordinate daily program operations across teaching staff, management, and families to meet documentation deadlines and administrative priorities.</li>
-        <li>Maintain program compliance and personnel-adjacent documentation, including attendance, staff and student files, and required Early Head Start paperwork.</li>
-        <li>Serve as a primary point of contact for family and staff communication, managing program updates and referrals.</li>
+        <li>Coordinate daily program operations across teaching staff, management, and families to meet documentation deadlines and operational goals.</li>
+        <li>Maintain compliance documentation and personnel records: attendance, staff/student files, assessments, and Early Head Start documentation.</li>
+        <li>Serve as primary point of contact for family and staff communication, managing updates, routine concerns, and referrals to appropriate resources.</li>
       </ul>
     </div>
     <div class="job">
       <h3>Northwell Health</h3>
-      <div class="meta">Secretary — Practice Administration &amp; Workforce Support &middot; Apr 2023 – Mar 2025</div>
+      <div class="title">Patient Care Coordinator — Admin &amp; Employee Records</div>
+      <div class="meta">Apr 2023 – Mar 2025 &middot; New York, NY</div>
       <ul>
-        <li>Managed staff scheduling, timekeeping, and onboarding-related administration for a physician practice.</li>
-        <li>Coordinated daily administrative operations across physicians, clinical staff, and internal departments.</li>
-        <li>Maintained confidential employee and patient records in a compliance-sensitive setting.</li>
+        <li>Coordinated patient intake, scheduling, and front-desk operations in a fast-paced clinical setting.</li>
+        <li>Maintained confidential employee and patient records and documentation in a compliance-sensitive environment.</li>
+        <li>Supported staff scheduling, timekeeping, and onboarding-related administration for the practice.</li>
       </ul>
     </div>
     <div class="job">
-      <h3>Amazon.com, Inc. — Reading, PA</h3>
-      <div class="meta">FC Associate I — People &amp; Workforce Operations Support &middot; Oct 2020 – Jan 2023 &middot; Full-time</div>
+      <h3>Dream City Worldwide</h3>
+      <div class="title">HR Coordinator</div>
+      <div class="meta">Apr 2020 – Apr 2023 &middot; Philadelphia, PA</div>
       <ul>
-        <li>Supported onsite HR operations, resolving associate questions on attendance, PTO, and timekeeping.</li>
-        <li>Reviewed and corrected time punches and cleared attendance flags, escalating complex cases to HR partners.</li>
+        <li>Maintained confidential employee personnel files and HR records with accuracy and discretion.</li>
+        <li>Supported full-cycle onboarding: prepared new-hire paperwork, coordinated orientation, and ensured required documentation was complete.</li>
+        <li>Served as first point of contact for employee questions on policies, timekeeping, and benefits; escalated complex matters to HR leadership.</li>
+      </ul>
+      <div class="title" style="margin-top:14px;">HR Assistant</div>
+      <div class="meta">Apr 2018 – Apr 2020 &middot; Philadelphia, PA</div>
+      <ul>
+        <li>Provided administrative support to the HR team, including filing, data entry, and document preparation.</li>
+        <li>Assisted with onboarding paperwork, maintained organized employee records, and responded to routine employee inquiries.</li>
       </ul>
     </div>
     <div class="job">
-      <h3>Microfinance and Small Loans Centre (MASLOC) — Accra, Ghana</h3>
-      <div class="meta">Estate Department Intern — Facilities &amp; Procurement Support &middot; 2017 – 2018 &middot; Full-time</div>
+      <h3>Microfinance and Small Loans Centre (MASLOC)</h3>
+      <div class="title">HR Intern</div>
+      <div class="meta">2017 – 2018 &middot; Accra, Ghana</div>
       <ul>
-        <li>Supported procurement of office supplies and operational materials.</li>
-        <li>Assisted with facilities and property coordination, including maintenance and external service coordination.</li>
+        <li>Supported the HR team with filing, data entry, and preparation of personnel documents.</li>
+        <li>Assisted with onboarding documentation and helped maintain organized employee records and HR files.</li>
       </ul>
     </div>
   </section>
+
   <section class="card">
     <h2>Systems</h2>
     <div class="chips"><span>Workday</span><span>ADP</span><span>Kronos / UKG</span><span>Oracle HCM</span></div>
   </section>
+
   <section class="card edu">
     <h2>Education</h2>
     <p><strong>Methodist University</strong> — Bachelor's in Business Administration, Human Resources Management (2016)</p>
-    <p><strong>TEFL Certificate</strong> (Aug 2026) &middot; <strong>PMP</strong> — in progress</p>
+    <p><strong>Project Management Professional (PMP)</strong> — in progress</p>
     <p>Languages: English (fluent), French (B2)</p>
   </section>
+
   <footer>
-    Sweeta Odoom &middot; 917-402-2869 &middot; <a href="mailto:sweetaodoom@gmail.com">sweetaodoom@gmail.com</a>
+    <div class="name">Sweeta Odoom</div>
+    917-402-2869 &middot; <a href="mailto:sweetaodoom@gmail.com">sweetaodoom@gmail.com</a>
   </footer>
 </div>
+<script>
+  const cards = document.querySelectorAll('section.card');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  cards.forEach(c => io.observe(c));
+</script>
 </body>
 </html>
